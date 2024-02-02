@@ -1,0 +1,74 @@
+*{
+    font-family: Verdana;
+
+}
+
+header{
+    display: flex;
+    flex-flow: row;
+}
+
+#header_left{
+
+    background-color: #29434E;
+    color: white;
+    text-align: center;
+    width: 70%;
+    height: 70px;
+
+}
+
+#header_right{
+
+    background-color: #29434E;
+    color: white;
+    width: 30%;
+    height: 70px;
+
+
+}
+
+#recommended, #fantastic_films{
+
+    background-color: #B0BEC5;
+    height: 320px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    
+
+}
+
+.list{
+    display: flex;
+    flex-flow: row;
+}
+
+footer{
+    background-color: #29434E;
+    color: white;
+}
+
+.film{
+    padding: 5px;
+    width: 226px;
+    height: 280px;
+    
+    
+}
+
+h3{
+    background-color: #546E7A;
+    color: white;
+    margin: 0px;
+
+}
+
+
+h4{
+
+    text-align: center;
+    margin: 0px;
+    flex: none;
+
+}
+

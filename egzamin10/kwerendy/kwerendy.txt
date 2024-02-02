@@ -1,0 +1,7 @@
+kw1: SELECT `id`, `dataWyjazdu`, `cel`, `cena` FROM `wycieczki` WHERE `dostepna` = 1; 
+
+kw2: SELECT `nazwaPliku`, `podpis` FROM `zdjecia` ORDER BY `podpis`;
+
+kw3: SELECT `cel`, `nazwaPliku`, `podpis` FROM `wycieczki` JOIN `zdjecia` WHERE `wycieczki`.`zdjecia_id` = `zdjecia`.`id` AND `cena` > 1000; 
+
+kw4: ALTER TABLE `wycieczki` ADD `dataPrzyjazdu` DATE NULL AFTER `dataWyjazdu`; 

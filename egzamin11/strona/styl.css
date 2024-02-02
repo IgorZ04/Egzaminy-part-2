@@ -1,0 +1,87 @@
+*{
+    font-family: Garamond;
+}
+
+#sec_left_1 {
+
+    height: 500px;
+    width: 25%;
+    background-color: lavender;
+    float: left;
+    
+}
+
+#sec_left_2{
+    
+    height: 300px;
+    width: 25%;
+    background-color: lavender;
+    clear: left;
+    
+}
+
+#sec_right_1{
+    
+    height: 150px;
+    width: 75%;
+    background-color: indigo;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    float: left;
+    
+    
+}
+
+#sec_right_2{
+    
+    height: 650px;
+    width: 75%;
+    background-color: lavender;
+    font-size: 200%;
+    text-align: center;
+    float: right;
+
+}
+
+footer{
+
+    background-color: indigo;
+    color: white;
+    text-align: right;
+
+
+}
+
+ul{
+
+    list-style:square;
+
+}
+
+img{
+
+    padding: 5px;
+    margin: 10px;
+
+}
+
+img[src="./obraz1.jpg"]:hover{
+
+    padding: 4px;
+    border: solid 1px indigo;
+
+}
+
+/* main{
+    display: flex;
+    flex-flow: row;
+    width: auto;
+} */
+
+
+
+p{
+    margin: 0;
+}
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabryka cukierków</title>
+    <link rel="stylesheet" href="styl10.css">
+</head>
+
+<body>
+
+    <script>
+
+        function order() {
+
+            const offer = document.getElementById("shape_number").value;
+            const R = document.getElementById("r_number").value;
+            const G = document.getElementById("g_number").value;
+            const B = document.getElementById("b_number").value;
+            const element = document.getElementById('your_order');
+            const element2 = document.getElementById('color_button');
+
+            element2.style.backgroundColor = `rgb(${R}, ${G}, ${B})`;
+
+            if (offer == 1) {
+
+                element.innerHTML = "Twoje zamówienie to cukierek cytryna";
+
+            }
+            else if (offer == 2) {
+
+                element.innerHTML = "Twoje zamówienie to cukierek liść";
+
+            }
+            else if (offer == 3) {
+
+                element.innerHTML = "Twoje zamówienie to cukierek banan";
+
+            }
+            else{
+                element.innerHTML = "Twoje zamówienie to cukierek inny";
+            }
+
+            
+
+        }
+
+    </script>
+
+    <header>
+
+        <section id="header_left">
+
+            <a href="zamowienia.html" id="order">Zamów cukierki</a>
+
+        </section>
+
+        <section id="header_right">
+
+            <a href="index.html"><img src="./logotyp.png" alt="Nasze logo"></a>
+
+        </section>
+
+    </header>
+
+    <section id="baner">
+
+        <h1>Strefa zamówień</h1>
+
+    </section>
+
+    <main>
+
+        <section id="main_left">
+
+            <label for="shape_number">Numer kształtu</label>
+            <input type="number" id="shape_number" name="shape_number">
+
+            <br>
+
+            <span>skomponuj swój kolor, podaj RGB: </span>
+
+            <label for="r_number">R: </label>
+            <input type="number" id="r_number" name="r_number">
+
+            <label for="g_number">G: </label>
+            <input type="number" id="g_number" name="g_number">
+
+            <label for="b_number">B: </label>
+            <input type="number" id="b_number" name="b_number">
+
+            <br>
+            <button id="but_1" onclick="order()">Zamówienie</button>
+
+            <p id="your_order">Twoje zamówienia</p>
+
+            <button id="color_button">Kolor</button>
+
+        </section>
+
+        <section id="main_right">
+
+            <h2>Nasza oferta</h2>
+
+            <table>
+
+                <tr>
+                    <td>Kształty</td>
+                    <td rowspan="2">Możesz zamówić dowolny kolor cukierka</td>
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <ol>
+                            <li>cytryna</li>
+                            <li>liść</li>
+                            <li>banan</li>
+                        </ol>
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <span>Autor strony: 00000000000</span>
+    </footer>
+
+</body>
+
+</html>

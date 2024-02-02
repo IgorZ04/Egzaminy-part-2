@@ -1,0 +1,7 @@
+kw1: SELECT `id`, `nr_rejsu`, `czas`, `kierunek`, `status_lotu` FROM `odloty` ORDER BY `czas` DESC; 
+
+kw2: SELECT `czas` FROM `odloty` WHERE `czas` > '10:10:00' AND `czas` < '10:19:00'; 
+
+kw3: SELECT `nr_rejsu` FROM `odloty` JOIN `samoloty` WHERE `odloty`.`samoloty_id` = `samoloty`.`id` AND `kierunek`="Malta"; 
+
+kw4: UPDATE `przyloty` SET `status_lotu`='planowy' WHERE `nr_rejsu`="LH9829";

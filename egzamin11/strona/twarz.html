@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi kosmetyczne</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+
+    <main>
+
+
+            
+            <div id="sec_left_1">
+
+                <h2>W ofercie</h2>
+                <ul>
+                    <li><a href="./twarz.html">Zabiegi na twarz</a></li>
+                    <ol>
+                        <li>Piling</li>
+                        <li>Maska</li>
+                        <li>Regulacja brwi</li>
+                    </ol>
+                    <li>Masaż</li>
+                    <li>Diety oczyszczające</li>
+                </ul>
+
+                <a href="index.html">Do strony głównej</a>
+
+            </div>
+
+            <div id="sec_right_1">
+
+                <h1>Salon Kosmetyczny</h1>
+
+            </div>
+
+            <div id="sec_right_2">
+
+                <h2>Sprawdź cenę swojej wizyty</h2>
+                <fieldset>
+
+                    <legend>Wybierz zabiegi</legend>
+
+                    <input type="checkbox" name="piling" id="piling">
+                    <label for="Piling">Piling</label>
+                    
+                    <br>
+    
+                    <input type="checkbox" name="maska" id="maska">
+                    <label for="Piling">Maska</label>
+    
+                    <br>
+    
+                    <input type="checkbox" name="masaz_twarzy" id="masaz_twarzy">
+                    <label for="Piling">Masaż twarzy</label>
+    
+                    <br>
+    
+                    <input type="checkbox" name="regulacja_brwi" id="regulacja_brwi">
+                    <label for="Piling">Regulacja brwi</label>
+    
+                    <br>
+
+                </fieldset>
+
+                <button onclick="price_check()">Sprawdź cenę</button>
+
+                <p id="p1"></p>
+
+                <!-- script -->
+
+                <script>
+
+                    function price_check(){
+
+                        let price = 0;
+                        
+                        const piling = document.getElementById('piling');
+                        const maska = document.getElementById('maska');
+                        const masaz_twarzy = document.getElementById('masaz_twarzy');
+                        const regulacja_brwi = document.getElementById('regulacja_brwi');
+                        const element = document.getElementById('p1');
+
+                        if(piling.checked == true){
+                            price += 45
+                        }
+
+                        if(maska.checked == true){
+                            price += 30
+                        }
+
+                        if(masaz_twarzy.checked == true){
+                            price += 20
+                        }
+
+                        if(regulacja_brwi.checked == true){
+                            price += 5
+                        }
+
+                        element.innerHTML = `Cena zabiegów: ${price}`;
+
+                    }
+
+
+                </script>
+
+
+
+            </div>
+
+            <div id="sec_left_2">
+
+                <img src="./obraz1.jpg" alt="Kosmetyczka">
+
+            </div>
+
+    
+
+      
+            
+
+     
+
+        
+    </main>
+    
+    <footer>
+
+        <p>Autor: 00000000000</p>
+
+    </footer>
+
+</body>
+
+</html>
